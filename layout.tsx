@@ -1,3 +1,0 @@
-import "./globals.css";import Link from "next/link";
-export const metadata={title:"Dra. Bruna Andrade | Odontologia & Estética",description:"Agendamento, orçamento e atendimento odontológico."};
-export default function Layout({children}:{children:React.ReactNode}){return <><header className="nav"><div className="container" style={{display:"flex",justifyContent:"space-between",width:"100%",alignItems:"center"}}><Link className="brand" href="/"><span className="brandmark">BA</span>Dra. Bruna Andrade</Link><nav className="navlinks"><Link href="/#procedimentos">Procedimentos</Link><Link href="/#como-funciona">Como funciona</Link><Link className="btn btn-primary" href="/login">Entrar</Link></nav></div></header>{children}</>}
