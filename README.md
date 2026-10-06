@@ -19,8 +19,8 @@
 1. Crie um projeto no Supabase.
 2. Abra SQL Editor e execute `supabase/schema.sql`.
 3. Em Authentication > URL Configuration, coloque:
-   - Site URL: `https://SEU-PROJETO.vercel.app`
-   - Redirect URLs: `https://SEU-PROJETO.vercel.app/auth/callback`
+   - Site URL: `https://dentista-bruna.vercel.app`
+   - Redirect URLs: `https://dentista-bruna.vercel.app/auth/callback`
 4. Em Authentication > Email, mantenha a confirmação de e-mail ativada.
 5. Copie URL e anon key para as variáveis da Vercel.
 
@@ -32,7 +32,7 @@ Ela passa a acessar `/admin`.
 
 ## 3. Vercel
 Suba este projeto para um repositório GitHub e importe-o na Vercel.
-Configure:
+Configure (use `https://dentista-bruna.vercel.app` for `NEXT_PUBLIC_APP_URL` in production):
 - NEXT_PUBLIC_SUPABASE_URL
 - NEXT_PUBLIC_SUPABASE_ANON_KEY
 - NEXT_PUBLIC_APP_URL
