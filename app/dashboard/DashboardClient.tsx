@@ -139,8 +139,8 @@ export default function Dashboard() {
         </div>
         <div className="dash-grid">
           <div className="panel">
-            <h2>Monte seu orçamento</h2>
-            <p className="muted small">Selecione os procedimentos. Nenhum pagamento é realizado aqui.</p>
+            <h2>Solicite seu atendimento</h2>
+            <p className="muted small">Escolha os tratamentos sobre os quais deseja conversar com a clínica.</p>
             {error && <div className="error">{error}</div>}
             {message && <div className="success">{message}</div>}
             <div className="tabs">
@@ -157,14 +157,10 @@ export default function Dashboard() {
                         onClick={() => toggle(procedure.id)}
                       >
                         {isSelected && <span aria-hidden="true">✓ </span>}
-                        {procedure.name} · R$ {Number(procedure.price).toFixed(2).replace(".", ",")}
+                        {procedure.name}
                       </button>
                     );
                   })}
-            </div>
-            <div className="total">
-              <span>Total estimado</span>
-              <span>R$ {total.toFixed(2).replace(".", ",")}</span>
             </div>
             <form onSubmit={book} style={{ marginTop: 18 }}>
               <div className="field">
@@ -190,7 +186,6 @@ export default function Dashboard() {
                   </span>
                 </div>
                 <p className="small muted">{appointment.procedures.join(" · ")}</p>
-                <b>R$ {Number(appointment.total).toFixed(2).replace(".", ",")}</b>
                 {appointment.clinic_message && <div className="notice">{appointment.clinic_message}</div>}
               </div>
             ))}
