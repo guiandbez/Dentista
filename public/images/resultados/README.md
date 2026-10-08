@@ -1,1 +1,1 @@
-Adicione aqui `resultado-01.jpg`, `resultado-02.jpg` e `resultado-03.jpg`. Use apenas imagens autorizadas e não as apresente como pacientes reais da clínica sem confirmação.
+A galeria da página inicial usa localmente as fotos de sorriso listadas em `../tratamentos/`. Elas são imagens copiadas do site de referência.

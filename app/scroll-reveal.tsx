@@ -11,14 +11,14 @@ export default function ScrollReveal({ children }: { children: ReactNode }) {
 
     const groups = [
       [".hero-content > *", "fade-up", 55],
+      [".hero-portrait", "fade-up", 0],
       [".about-photo", "fade-left", 0],
       [".about-copy > *", "fade-up", 65],
+      [".clinic-photo", "fade-up", 80],
       [".treatments .center-heading > *", "fade-up", 65],
       [".treatment-card", "fade-up", 50],
-      [".treatments > .container > .gallery-note", "fade-up", 0],
       [".results .center-heading > *", "fade-up", 65],
-      [".gallery-image", "fade-up", 90],
-      [".results .gallery-note", "fade-up", 0],
+      [".gallery figure", "fade-up", 90],
       [".contact-content > *", "fade-up", 65],
       [".footer-main > *", "fade-up", 70],
     ] as const;

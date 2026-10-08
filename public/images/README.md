@@ -1,14 +1,15 @@
-# Imagens do site
+# Imagens utilizadas no site
 
-Substitua os arquivos listados abaixo por fotos próprias usando exatamente o mesmo nome. O deploy da Vercel publicará as novas fotos automaticamente.
+As fotos abaixo foram copiadas do site de referência `https://bruna.apertize.com.br` para uso local. O site da clínica usa exclusivamente os arquivos locais listados aqui.
 
-- `dra-bruna/principal.jpg`: retrato aprovado da Dra. Bruna usado no hero, na seção Sobre e como fallback de fundo de contato.
-- `tratamentos/facetas.jpg`
-- `tratamentos/clareamento.jpg`
-- `tratamentos/harmonizacao.jpg`
-- `tratamentos/implantes.jpg`
-- `resultados/resultado-01.jpg`
-- `resultados/resultado-02.jpg`
-- `resultados/resultado-03.jpg`
+- `dra-bruna/bruna-transparente-2160.webp`: retrato recortado usado no hero.
+- `dra-bruna/dra-bruna-506.webp`: retrato usado na apresentação da Dra. Bruna.
+- `tratamentos/caso-lentes-1170.webp`: foto de sorriso usada nos cards e na galeria.
+- `tratamentos/ref-clareamento-1200.webp`: foto de sorriso usada nos cards e na galeria.
+- `tratamentos/caso-labial-1169.webp`: foto de paciente usada nos cards e na galeria.
+- `clinica/espera-896.webp`: sala de espera.
+- `clinica/corredor-1170.webp`: corredor.
+- `clinica/recepcao-896.webp`: recepção.
+- `clinica/placa-896.webp`: placa da clínica, disponível para uso em seções internas.
 
-Use imagens JPG, JPEG, PNG ou WEBP. Para manter a troca sem alteração de código, mantenha o nome e a extensão `.jpg` dos arquivos padrão. Até as fotos serem adicionadas, o layout exibe fundos suaves em vez de carregar conteúdo externo. As fotos da galeria devem ser identificadas como ilustrativas e não devem sugerir que retratam pacientes reais sem autorização e confirmação.
+As fotos de referência são servidas em WebP e mantidas em suas pastas por tipo de conteúdo.
