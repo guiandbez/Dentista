@@ -4,6 +4,7 @@ import ScrollReveal from "./scroll-reveal";
 
 const whatsapp = "https://wa.me/5511948437467";
 const instagram = "https://instagram.com/Dra.bruandrade";
+const clinicMaps = "https://www.google.com/maps/dir/?api=1&destination=Cl%C3%ADnica%20Dra.%20Bruna%20Andrade%20-%20Odontologia%20%26%20Est%C3%A9tica%2C%20R.%20Inga%C3%AD%2C%20156%20-%20Vila%20Prudente%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003132-080";
 const wa = (message: string) => `${whatsapp}?text=${encodeURIComponent(message)}`;
 
 const treatments = [
@@ -80,10 +81,20 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="container clinic-gallery" aria-label="Imagens da clínica">
-        <figure className="photo-frame clinic-photo"><img src="/images/clinica/espera-896.webp" alt="Sala de espera da clínica" loading="lazy" /></figure>
-        <figure className="photo-frame clinic-photo"><img src="/images/clinica/corredor-1170.webp" alt="Corredor da clínica" loading="lazy" /></figure>
-        <figure className="photo-frame clinic-photo"><img src="/images/clinica/recepcao-896.webp" alt="Recepção da clínica" loading="lazy" /></figure>
+    </section>
+
+    <section className="clinic-section section" id="clinica">
+      <div className="container">
+        <div className="center-heading clinic-heading"><span className="eyebrow">A clínica</span></div>
+        <div className="clinic-showcase" aria-label="Imagens da clínica">
+          <figure className="photo-frame clinic-photo clinic-feature"><img src="/images/clinica/espera-896.webp" alt="Sala de espera da clínica" loading="lazy" /></figure>
+          <div className="clinic-mosaic">
+            <figure className="photo-frame clinic-photo"><img src="/images/clinica/corredor-1170.webp" alt="Corredor da clínica" loading="lazy" /></figure>
+            <figure className="photo-frame clinic-photo"><img src="/images/clinica/recepcao-896.webp" alt="Recepção da clínica" loading="lazy" /></figure>
+            <figure className="photo-frame clinic-photo clinic-sign"><img src="/images/clinica/placa-896.webp" alt="Placa da clínica" loading="lazy" /></figure>
+          </div>
+        </div>
+        <div className="clinic-actions"><a className="btn btn-outline" href={clinicMaps} target="_blank" rel="noopener noreferrer">Ver localização no Maps <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
 
