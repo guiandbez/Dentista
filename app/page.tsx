@@ -85,7 +85,11 @@ export default async function Home() {
 
     <section className="clinic-section section" id="clinica">
       <div className="container">
-        <div className="center-heading clinic-heading"><span className="eyebrow">A clínica</span></div>
+        <div className="center-heading clinic-heading">
+          <h2 className="clinic-title">A clínica</h2>
+          <p className="clinic-invitation">Venha conhecer nossa clínica</p>
+          <p className="clinic-description">Um espaço acolhedor, preparado para receber você com cuidado.</p>
+        </div>
         <div className="clinic-showcase" aria-label="Imagens da clínica">
           <figure className="photo-frame clinic-photo clinic-feature"><img src="/images/clinica/recepcao-896.webp" alt="Recepção da clínica" loading="lazy" /></figure>
           <div className="clinic-mosaic">
