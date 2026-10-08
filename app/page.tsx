@@ -58,7 +58,7 @@ export default async function Home() {
           <p className="hero-subtitle">Cuidado personalizado para valorizar sua beleza com naturalidade, confiança e atenção.</p>
           <div className="hero-actions">
             <a className="btn btn-primary" href={wa("Olá, Dra. Bruna! Gostaria de conversar e agendar uma avaliação.")} target="_blank" rel="noreferrer">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a>
-            <Link className="text-link" href="#tratamentos">Conhecer tratamentos <span aria-hidden="true">↓</span></Link>
+            <Link className="btn btn-outline hero-treatments-button" href="#tratamentos">Conhecer tratamentos</Link>
           </div>
         </div>
         <div className="hero-portrait"><span className="portrait-halo" /><img src="/images/dra-bruna/bruna-transparente-2160.webp" alt="Dra. Bruna Andrade" fetchPriority="high" /></div>

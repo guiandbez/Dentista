@@ -19,6 +19,7 @@ figure{margin:0}
 .btn-secondary,.btn-outline{background:#fff8;border-color:var(--blush-2);color:var(--rose-dark)}
 .btn-danger{background:#fff0f0;border-color:#f0c8cc;color:var(--danger)}
 .btn-outline:hover{border-color:var(--rose);background:#fff}
+.hero-treatments-button{background:var(--rose);border-color:var(--rose);color:#fff}.hero-treatments-button:hover{background:var(--rose-dark);border-color:var(--rose-dark);color:#fff}
 .text-link{display:inline-flex;gap:12px;align-items:center;color:var(--rose-dark);font-size:12px;font-weight:700;border-bottom:1px solid var(--sand);padding-bottom:7px;transition:gap .2s}.text-link:hover{gap:18px}
 .nav{height:88px;background:#fbf7f2ed;backdrop-filter:blur(14px);display:flex;align-items:center;border-bottom:1px solid #e8ded78c;position:sticky;top:0;z-index:20}
 .nav-inner{width:100%;max-width:1440px;padding:0 40px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:30px}
