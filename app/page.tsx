@@ -86,16 +86,16 @@ export default async function Home() {
     <section className="clinic-section section" id="clinica">
       <div className="container">
         <div className="center-heading clinic-heading">
-          <h2 className="clinic-title">A clínica</h2>
-          <p className="clinic-copy-line">Venha conhecer nossa clínica</p>
-          <p className="clinic-copy-line">Um espaço acolhedor, preparado para receber você com cuidado.</p>
+          <h2 className="clinic-title">O consultório</h2>
+          <p className="clinic-copy-line">Venha conhecer nosso consultório</p>
+          <p className="clinic-copy-line">Acolhimento em cada detalhe. Confiança em cada cuidado.</p>
         </div>
-        <div className="clinic-showcase" aria-label="Imagens da clínica">
-          <figure className="photo-frame clinic-photo clinic-feature"><img src="/images/clinica/recepcao-896.webp" alt="Recepção da clínica" loading="lazy" /></figure>
+        <div className="clinic-showcase" aria-label="Imagens do consultório">
+          <figure className="photo-frame clinic-photo clinic-feature"><img src="/images/clinica/recepcao-896.webp" alt="Recepção do consultório" loading="lazy" /></figure>
           <div className="clinic-mosaic">
-            <figure className="photo-frame clinic-photo"><img src="/images/clinica/espera-896.webp" alt="Sala de espera da clínica" loading="lazy" /></figure>
-            <figure className="photo-frame clinic-photo"><img src="/images/clinica/corredor-1170.webp" alt="Corredor da clínica" loading="lazy" /></figure>
-            <figure className="photo-frame clinic-photo clinic-sign"><img src="/images/clinica/placa-896.webp" alt="Placa da clínica" loading="lazy" /></figure>
+            <figure className="photo-frame clinic-photo"><img src="/images/clinica/espera-896.webp" alt="Sala de espera do consultório" loading="lazy" /></figure>
+            <figure className="photo-frame clinic-photo"><img src="/images/clinica/corredor-1170.webp" alt="Corredor do consultório" loading="lazy" /></figure>
+            <figure className="photo-frame clinic-photo clinic-sign"><img src="/images/clinica/placa-896.webp" alt="Placa do consultório" loading="lazy" /></figure>
           </div>
         </div>
         <div className="clinic-actions"><a className="btn btn-outline" href={clinicMaps} target="_blank" rel="noopener noreferrer">Ver localização no Maps <span aria-hidden="true">↗</span></a></div>
@@ -115,7 +115,7 @@ export default async function Home() {
     <section className="results section" id="resultados"><div className="container"><div className="center-heading"><span className="eyebrow">Resultados</span><h2>Beleza nos detalhes</h2></div><div className="gallery">
       <figure className="photo-frame gallery-tall"><img src="/images/tratamentos/caso-lentes-1170.webp" alt="Resultado de tratamento com facetas em resina" loading="lazy" /></figure>
       <figure className="photo-frame"><img src="/images/tratamentos/ref-clareamento-1200.webp" alt="Sorriso com dentes claros" loading="lazy" /></figure>
-      <figure className="photo-frame"><img src="/images/tratamentos/caso-labial-1169.webp" alt="Paciente na clínica" loading="lazy" /></figure>
+      <figure className="photo-frame"><img src="/images/tratamentos/caso-labial-1169.webp" alt="Paciente no consultório" loading="lazy" /></figure>
     </div></div></section>
 
     <section className="contact section" id="contato"><div className="contact-content"><span className="eyebrow">Um convite para cuidar de você</span><h2>Seu sorriso merece<br /><em>um cuidado especial.</em></h2><p>Vamos conversar e encontrar o melhor tratamento para você?</p><div className="hero-actions"><a className="btn btn-primary" href={wa("Olá, Dra. Bruna! Gostaria de conversar e agendar uma avaliação.")} target="_blank" rel="noreferrer">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a><a className="btn btn-outline" href={instagram} target="_blank" rel="noreferrer">@Dra.bruandrade</a></div></div></section>

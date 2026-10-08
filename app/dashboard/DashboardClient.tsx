@@ -118,7 +118,7 @@ export default function Dashboard() {
     setSelected([]);
     setDate("");
     setTime("");
-    setMessage("Solicitação enviada para a clínica.");
+    setMessage("Solicitação enviada para o consultório.");
     await refresh(user.id);
   }
 
@@ -140,7 +140,7 @@ export default function Dashboard() {
         <div className="dash-grid">
           <div className="panel">
             <h2>Solicite seu atendimento</h2>
-            <p className="muted small">Escolha os tratamentos sobre os quais deseja conversar com a clínica.</p>
+            <p className="muted small">Escolha os tratamentos sobre os quais deseja conversar com o consultório.</p>
             {error && <div className="error">{error}</div>}
             {message && <div className="success">{message}</div>}
             <div className="tabs">
