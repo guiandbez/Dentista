@@ -146,7 +146,7 @@ export default function Dashboard() {
             <div className="tabs">
               {proceduresLoading ? <p className="muted small">Carregando procedimentos...</p>
                 : procs.length === 0 ? <p className="muted small">Nenhum procedimento ativo disponível.</p>
-                  : procs.map((procedure) => {
+                  : procs.filter((procedure) => !/\b(botox|facetas?)\b/i.test(procedure.name)).map((procedure) => {
                     const isSelected = selected.includes(procedure.id);
                     return (
                       <button

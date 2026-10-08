@@ -76,8 +76,6 @@ insert into public.procedures(name,description,price) values
 ('Limpeza dental','Profilaxia e orientação de higiene',180),
 ('Clareamento','Avaliação + planejamento do clareamento',900),
 ('Restauração','Restauração estética em resina',280),
-('Faceta em resina','Planejamento e procedimento por dente',850),
-('Botox facial','Avaliação estética e aplicação',900)
 on conflict do nothing;
 
 -- Depois de criar a conta da dentista no site, transforme-a em administradora:

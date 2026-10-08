@@ -4,16 +4,10 @@ import ScrollReveal from "./scroll-reveal";
 
 const whatsapp = "https://wa.me/5511948437467";
 const instagram = "https://instagram.com/Dra.bruandrade";
-const clinicMaps = "https://www.google.com/maps/dir/?api=1&destination=Cl%C3%ADnica%20Dra.%20Bruna%20Andrade%20-%20Odontologia%20%26%20Est%C3%A9tica%2C%20R.%20Inga%C3%AD%2C%20156%20-%20Vila%20Prudente%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003132-080";
+const clinicMaps = "https://www.google.com/maps/dir/?api=1&destination=Consult%C3%B3rio%20Dra.%20Bruna%20Andrade%20-%20Odontologia%20%26%20Est%C3%A9tica%2C%20R.%20Inga%C3%AD%2C%20156%20-%20Vila%20Prudente%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003132-080";
 const wa = (message: string) => `${whatsapp}?text=${encodeURIComponent(message)}`;
 
 const treatments = [
-  {
-    name: "Facetas Dentárias",
-    image: "/images/tratamentos/caso-lentes-1170.webp",
-    description: "São lâminas finas que podem melhorar a forma, cor e harmonia dos dentes, com aparência natural.",
-    benefits: ["Harmonizar o formato dos dentes", "Melhorar a cor do sorriso", "Corrigir pequenas imperfeições", "Criar um sorriso mais uniforme"],
-  },
   {
     name: "Clareamento Dental",
     image: "/images/tratamentos/ref-clareamento-1200.webp",
@@ -31,12 +25,6 @@ const treatments = [
     image: "/images/tratamentos/caso-lentes-1170.webp",
     description: "Repõe dentes perdidos com segurança, funcionalidade e estética.",
     benefits: ["Restaurar a função mastigatória", "Preservar o osso da região", "Devolver a confiança ao sorrir", "Melhorar a qualidade de vida"],
-  },
-  {
-    name: "Botox",
-    image: "/images/tratamentos/caso-labial-1169.webp",
-    description: "Procedimento que pode suavizar linhas de expressão e ajudar a manter uma aparência mais descansada e natural.",
-    benefits: ["Suavizar linhas de expressão", "Deixar a aparência mais descansada", "Preservar a naturalidade da expressão", "Tratamento personalizado"],
   },
 ];
 
@@ -67,8 +55,7 @@ export default async function Home() {
     </section>
 
     <section className="about section" id="sobre">
-      <div className="container about-grid">
-        <figure className="about-photo photo-frame"><img src="/images/dra-bruna/dra-bruna-506.webp" alt="Retrato da Dra. Bruna Andrade" loading="lazy" /></figure>
+      <div className="container about-grid about-copy-only">
         <div className="about-copy">
           <span className="eyebrow">Conheça a Dra. Bruna</span>
           <h2>Dra. Bruna Andrade</h2>
@@ -87,8 +74,7 @@ export default async function Home() {
       <div className="container">
         <div className="center-heading clinic-heading">
           <h2 className="clinic-title">O consultório</h2>
-          <p className="clinic-copy-line">Venha conhecer nosso consultório</p>
-          <p className="clinic-copy-line">Acolhimento em cada detalhe. Confiança em cada cuidado.</p>
+          <p className="clinic-copy-line">Cuidado que acolhe, confian&#xE7;a em cada detalhe e bem-estar em cada encontro.</p>
         </div>
         <div className="clinic-showcase" aria-label="Imagens do consultório">
           <figure className="photo-frame clinic-photo clinic-feature"><img src="/images/clinica/recepcao-896.webp" alt="Recepção do consultório" loading="lazy" /></figure>
@@ -113,7 +99,7 @@ export default async function Home() {
     </section>
 
     <section className="results section" id="resultados"><div className="container"><div className="center-heading"><span className="eyebrow">Resultados</span><h2>Beleza nos detalhes</h2></div><div className="gallery">
-      <figure className="photo-frame gallery-tall"><img src="/images/tratamentos/caso-lentes-1170.webp" alt="Resultado de tratamento com facetas em resina" loading="lazy" /></figure>
+      <figure className="photo-frame gallery-tall"><img src="/images/tratamentos/caso-lentes-1170.webp" alt={"Resultado de tratamento odontol\u00f3gico"} loading="lazy" /></figure>
       <figure className="photo-frame"><img src="/images/tratamentos/ref-clareamento-1200.webp" alt="Sorriso com dentes claros" loading="lazy" /></figure>
       <figure className="photo-frame"><img src="/images/tratamentos/caso-labial-1169.webp" alt="Paciente no consultório" loading="lazy" /></figure>
     </div></div></section>

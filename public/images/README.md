@@ -1,6 +1,6 @@
 # Imagens utilizadas no site
 
-As fotos abaixo foram copiadas do site de referência `https://bruna.apertize.com.br` para uso local. O site da clínica usa exclusivamente os arquivos locais listados aqui.
+As fotos abaixo foram copiadas do site de referência `https://bruna.apertize.com.br` para uso local. O site do consultório usa exclusivamente os arquivos locais listados aqui.
 
 - `dra-bruna/bruna-transparente-2160.webp`: retrato recortado usado no hero.
 - `dra-bruna/dra-bruna-506.webp`: retrato usado na apresentação da Dra. Bruna.
@@ -10,6 +10,6 @@ As fotos abaixo foram copiadas do site de referência `https://bruna.apertize.co
 - `clinica/espera-896.webp`: sala de espera.
 - `clinica/corredor-1170.webp`: corredor.
 - `clinica/recepcao-896.webp`: recepção.
-- `clinica/placa-896.webp`: placa da clínica, disponível para uso em seções internas.
+- `clinica/placa-896.webp`: placa do consultório, disponível para uso em seções internas.
 
 As fotos de referência são servidas em WebP e mantidas em suas pastas por tipo de conteúdo.

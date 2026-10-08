@@ -12,7 +12,6 @@ export default function ScrollReveal({ children }: { children: ReactNode }) {
     const groups = [
       [".hero-content > *", "fade-up", 55],
       [".hero-portrait", "fade-up", 0],
-      [".about-photo", "fade-left", 0],
       [".about-copy > *", "fade-up", 65],
       [".clinic-heading > *", "fade-up", 65],
       [".clinic-photo", "fade-up", 80],
