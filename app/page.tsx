@@ -87,10 +87,10 @@ export default async function Home() {
       <div className="container">
         <div className="center-heading clinic-heading"><span className="eyebrow">A clínica</span></div>
         <div className="clinic-showcase" aria-label="Imagens da clínica">
-          <figure className="photo-frame clinic-photo clinic-feature"><img src="/images/clinica/espera-896.webp" alt="Sala de espera da clínica" loading="lazy" /></figure>
+          <figure className="photo-frame clinic-photo clinic-feature"><img src="/images/clinica/recepcao-896.webp" alt="Recepção da clínica" loading="lazy" /></figure>
           <div className="clinic-mosaic">
+            <figure className="photo-frame clinic-photo"><img src="/images/clinica/espera-896.webp" alt="Sala de espera da clínica" loading="lazy" /></figure>
             <figure className="photo-frame clinic-photo"><img src="/images/clinica/corredor-1170.webp" alt="Corredor da clínica" loading="lazy" /></figure>
-            <figure className="photo-frame clinic-photo"><img src="/images/clinica/recepcao-896.webp" alt="Recepção da clínica" loading="lazy" /></figure>
             <figure className="photo-frame clinic-photo clinic-sign"><img src="/images/clinica/placa-896.webp" alt="Placa da clínica" loading="lazy" /></figure>
           </div>
         </div>
