@@ -125,3 +125,5 @@ html.theme-transition,html.theme-transition *{transition-property:color,backgrou
 .theme-option-check{margin-left:auto;color:var(--interactive);font-size:13px}
 @media(prefers-reduced-motion:reduce){html.theme-transition,html.theme-transition *{transition-duration:0s!important}}
 @media(max-width:680px){.theme-switcher{margin-left:auto}.mobile-menu{margin-left:10px}}
+html[data-theme="mono"] .hero-treatments-button{background:transparent;border:2px solid var(--interactive);padding:14px 22px;color:var(--interactive)}
+html[data-theme="mono"] .hero-treatments-button:hover{background:var(--interactive);border-color:var(--interactive);color:var(--cream)}
