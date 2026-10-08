@@ -114,8 +114,8 @@ html.theme-transition,html.theme-transition *{transition-property:color,backgrou
 .theme-option{width:100%;min-height:38px;padding:8px 9px;display:flex;align-items:center;gap:9px;border:0;border-radius:10px;background:transparent;color:var(--ink);font:500 11px "Montserrat",sans-serif;text-align:left;cursor:pointer}
 .theme-option:hover,.theme-option[aria-pressed="true"]{background:var(--soft)}
 .theme-swatch{width:13px;height:13px;flex:none;border:1px solid var(--line);border-radius:50%}
-.theme-swatch-main{background:linear-gradient(135deg,var(--cream) 50%,var(--interactive) 50%)}
-.theme-swatch-rose{background:linear-gradient(135deg,var(--cream) 50%,var(--rose) 50%)}
+.theme-swatch-main{background:linear-gradient(135deg,#F7F6F3 50%,#5B6250 50%)}
+.theme-swatch-rose{background:linear-gradient(135deg,#FBF7F2 50%,#A96576 50%)}
 .theme-swatch-mono{background:linear-gradient(90deg,#222 0 33%,#999 33% 66%,#fff 66% 100%)}
 .theme-option-check{margin-left:auto;color:var(--interactive);font-size:13px}
 @media(prefers-reduced-motion:reduce){html.theme-transition,html.theme-transition *{transition-duration:0s!important}}
