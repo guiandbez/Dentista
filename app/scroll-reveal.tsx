@@ -17,8 +17,6 @@ export default function ScrollReveal({ children }: { children: ReactNode }) {
       [".clinic-photo", "fade-up", 80],
       [".treatments .center-heading > *", "fade-up", 65],
       [".treatment-card", "fade-up", 50],
-      [".results .center-heading > *", "fade-up", 65],
-      [".gallery figure", "fade-up", 90],
       [".contact-content > *", "fade-up", 65],
       [".footer-main > *", "fade-up", 70],
     ] as const;

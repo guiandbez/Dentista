@@ -98,14 +98,8 @@ export default async function Home() {
       </div>
     </section>
 
-    <section className="results section" id="resultados"><div className="container"><div className="center-heading"><span className="eyebrow">Resultados</span><h2>Beleza nos detalhes</h2></div><div className="gallery">
-      <figure className="photo-frame gallery-tall"><img src="/images/tratamentos/caso-lentes-1170.webp" alt={"Resultado de tratamento odontol\u00f3gico"} loading="lazy" /></figure>
-      <figure className="photo-frame"><img src="/images/tratamentos/ref-clareamento-1200.webp" alt="Sorriso com dentes claros" loading="lazy" /></figure>
-      <figure className="photo-frame"><img src="/images/tratamentos/caso-labial-1169.webp" alt="Paciente no consultório" loading="lazy" /></figure>
-    </div></div></section>
-
     <section className="contact section" id="contato"><div className="contact-content"><span className="eyebrow">Um convite para cuidar de você</span><h2>Seu sorriso merece<br /><em>um cuidado especial.</em></h2><p>Vamos conversar e encontrar o melhor tratamento para você?</p><div className="hero-actions"><a className="btn btn-primary" href={wa("Olá, Dra. Bruna! Gostaria de conversar e agendar uma avaliação.")} target="_blank" rel="noreferrer">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a><a className="btn btn-outline" href={instagram} target="_blank" rel="noreferrer">@Dra.bruandrade</a></div></div></section>
 
-    <footer className="footer"><div className="container footer-main"><div className="footer-brand"><Link href="#inicio">Dra. Bruna Andrade</Link><span>Odontologia e Estética</span></div><nav aria-label="Links do rodapé"><Link href="#inicio">Início</Link><Link href="#sobre">Sobre</Link><Link href="#tratamentos">Tratamentos</Link><Link href="#resultados">Resultados</Link><Link href="#contato">Contato</Link></nav><div className="footer-contact"><a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp<br /><span>+55 11 94843-7467</span></a><a href={instagram} target="_blank" rel="noreferrer">Instagram<br /><span>@Dra.bruandrade</span></a></div></div><div className="container footer-bottom"><span>© 2025 Dra. Bruna Andrade. Todos os direitos reservados.</span></div></footer>
+    <footer className="footer"><div className="container footer-main"><div className="footer-brand"><Link href="#inicio">Dra. Bruna Andrade</Link><span>Odontologia e Estética</span></div><nav aria-label="Links do rodapé"><Link href="#inicio">Início</Link><Link href="#sobre">Sobre</Link><Link href="#tratamentos">Tratamentos</Link><Link href="#contato">Contato</Link></nav><div className="footer-contact"><a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp<br /><span>+55 11 94843-7467</span></a><a href={instagram} target="_blank" rel="noreferrer">Instagram<br /><span>@Dra.bruandrade</span></a></div></div><div className="container footer-bottom"><span>© 2025 Dra. Bruna Andrade. Todos os direitos reservados.</span></div></footer>
   </main></ScrollReveal>;
 }

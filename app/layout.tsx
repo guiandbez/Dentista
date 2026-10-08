@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Dra. Bruna Andrade | Odontologia e Estética", description: "Cuidado personalizado para valorizar a beleza e a naturalidade do seu sorriso.", type: "website", locale: "pt_BR" },
 };
 
-const links = [["Início", "#inicio"], ["Sobre", "#sobre"], ["Tratamentos", "#tratamentos"], ["Resultados", "#resultados"], ["Contato", "#contato"]];
+const links = [["Início", "#inicio"], ["Sobre", "#sobre"], ["Tratamentos", "#tratamentos"], ["Contato", "#contato"]];
 const appointment = "https://wa.me/5511948437467?text=Ol%C3%A1%2C%20Dra.%20Bruna!%20Gostaria%20de%20conversar%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
