@@ -15,7 +15,7 @@ figure{margin:0}
 .eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:11px;color:var(--rose);font-weight:700}
 .btn{border:1px solid transparent;border-radius:999px;padding:15px 23px;font:600 12px "Montserrat",sans-serif;letter-spacing:.015em;cursor:pointer;display:inline-flex;justify-content:center;align-items:center;gap:14px;transition:background .25s,color .25s,border-color .25s,transform .25s,box-shadow .25s;min-height:50px}
 .btn:hover{transform:translateY(-2px);box-shadow:0 9px 22px rgba(74,48,44,.12)}
-.btn-primary{background:var(--interactive);color:var(--cream)}.btn-primary:hover{background:var(--ink)}
+.btn-primary{background:var(--interactive);border-color:rgba(181,154,114,.62);color:var(--cream)}.btn-primary:hover{background:var(--ink)}
 .btn-secondary,.btn-outline{background:rgba(247,246,243,.72);border-color:var(--blush-2);color:var(--ink)}
 .btn-danger{background:rgba(184,135,135,.12);border-color:var(--rose);color:var(--ink)}
 .btn-outline:hover{border-color:var(--interactive);background:var(--cream)}
@@ -23,8 +23,8 @@ figure{margin:0}
 .text-link{display:inline-flex;gap:12px;align-items:center;color:var(--interactive);font-size:12px;font-weight:700;border-bottom:1px solid var(--sand);padding-bottom:7px;transition:gap .2s}.text-link:hover{gap:18px}
 .nav{height:88px;background:rgba(247,246,243,.93);backdrop-filter:blur(14px);display:flex;align-items:center;border-bottom:1px solid rgba(181,154,114,.35);position:sticky;top:0;z-index:20}
 .nav-inner{width:100%;max-width:1440px;padding:0 40px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:30px}
-.brand{display:flex;flex-direction:column;color:var(--ink);font-size:17px;font-weight:700;line-height:1.1;letter-spacing:-.035em}.brand-line{display:flex;align-items:center;gap:8px}.brand-icon{color:var(--rose);font-size:16px}.brand small{font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-top:6px;font-weight:500}
-.navlinks{display:flex;gap:clamp(18px,2.4vw,34px);align-items:center;font-size:11px;font-weight:600}.navlinks>a:not(.btn){transition:color .2s}.navlinks>a:not(.btn):hover{color:var(--rose)}.navlinks .btn{padding:12px 19px;min-height:45px}
+.brand{display:flex;flex-direction:column;color:var(--ink);font-size:17px;font-weight:700;line-height:1.1;letter-spacing:-.035em}.brand-line{display:flex;align-items:center;gap:8px}.brand-icon{color:var(--sand);font-size:16px}.brand small{font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-top:6px;font-weight:500}
+.navlinks{display:flex;gap:clamp(18px,2.4vw,34px);align-items:center;font-size:11px;font-weight:600}.navlinks>a:not(.btn){transition:color .2s;text-decoration-thickness:1px;text-underline-offset:5px;text-decoration-color:transparent}.navlinks>a:not(.btn):hover{color:var(--interactive);text-decoration-line:underline;text-decoration-color:var(--sand)}.navlinks .btn{padding:12px 19px;min-height:45px}
 .mobile-menu{display:none}
 .hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 79% 54%,#F7F6F3 0,transparent 38%),linear-gradient(180deg,#F7F6F3 0%,#F7F6F3 58%,#F7F6F3 100%);min-height:min(760px,calc(100vh - 88px));display:flex;align-items:center}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(370px,.9fr);align-items:center;gap:clamp(28px,6vw,90px);min-height:min(760px,calc(100vh - 88px));padding-top:22px}
@@ -86,3 +86,10 @@ button,input,select,textarea{font-family:"Montserrat",sans-serif}
 .gallery figure:nth-child(3) img{object-position:center 45%}
 @media(max-width:960px){.treatment-card{flex-basis:calc((100% - 24px)/2)}}
 @media(max-width:680px){.clinic-section{padding-block:clamp(96px,18vw,120px)}.clinic-heading{margin-bottom:46px}.clinic-title{font-size:clamp(38px,11vw,48px)}.clinic-copy-line{font-size:clamp(17px,4.8vw,20px);line-height:1.5;max-width:34ch;margin-top:14px}.clinic-gallery{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}.clinic-photo,.clinic-photo:nth-child(2){height:auto;aspect-ratio:1/1}.clinic-photo:first-child{grid-column:auto;aspect-ratio:1/1}.clinic-showcase{grid-template-columns:1fr;height:auto;gap:14px}.clinic-showcase .clinic-feature{aspect-ratio:1.08/1}.clinic-mosaic{gap:12px;grid-auto-rows:1fr}.clinic-mosaic .clinic-photo{aspect-ratio:1/1}.clinic-mosaic .clinic-sign{width:calc(50% - 6px)}.clinic-actions .btn{width:100%}.treatment-card{flex-basis:100%}.treatment-card-image{height:auto;aspect-ratio:1.25/1}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}.gallery figure,.gallery figure.gallery-tall{height:auto;aspect-ratio:1/1.08}.gallery .gallery-tall{grid-column:auto;height:auto}}
+
+.photo-frame{border:1px solid rgba(181,154,114,.32)}
+.about-points article>span,.treatment-card li::marker{color:var(--sand)}
+.center-heading .eyebrow::before{content:"";display:inline-block;width:22px;height:1px;margin-right:9px;background:var(--sand);vertical-align:middle;opacity:.8}
+.clinic-title::after{content:"";display:block;width:32px;height:1px;margin:14px auto 0;background:var(--sand)}
+.clinic-section .clinic-photo{border-color:rgba(181,154,114,.48)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--sand);outline-offset:3px}
