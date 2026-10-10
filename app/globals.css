@@ -127,4 +127,4 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .hero-content{max-width:860px}
 .hero h1{max-width:860px;font-size:clamp(40px,4.4vw,58px)}
 .hero-title-line{display:block}
-@media(max-width:680px){.hero-title-line{display:inline}.hero h1{max-width:100%;font-size:clamp(27px,7vw,34px);text-wrap:balance}}
+@media(max-width:680px){.hero-title-line{display:inline}.hero h1{max-width:17ch;font-size:clamp(27px,7vw,36px);text-wrap:balance}}
