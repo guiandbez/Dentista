@@ -34,6 +34,12 @@ const treatments: Treatment[] = [
     description: "Um sorriso mais claro para você sorrir com mais confiança.",
     benefits: ["Reduzir o aspecto amarelado dos dentes.", "Clarear manchas que comprometem a aparência do sorriso.", "Recuperar a luminosidade dos dentes.", "Sentir mais segurança ao sorrir em fotos."],
   },
+  {
+    name: "Implantes / Reabilitação",
+    image: "/images/tratamentos/implantes.webp",
+    description: "Recupere a segurança para sorrir, mastigar e viver sem se preocupar com a falta de um ou mais dentes.",
+    benefits: ["Substituir dentes perdidos.", "Recuperar a segurança ao mastigar.", "Melhorar a estética e a harmonia do sorriso.", "Recuperar a confiança para sorrir sem esconder os dentes."],
+  },
 ];
 
 async function getProcedures() {
@@ -56,7 +62,7 @@ export default async function Home() {
           <h1>Devolvo a liberdade de sorrir <em>sem esconder os dentes</em></h1>
           <p className="hero-subtitle">Um cuidado próximo, pensado para que você se sinta acolhido, confiante e à vontade para sorrir.</p>
           <div className="hero-actions">
-            <a className="btn btn-primary" href={appointmentWhatsappUrl()} target="_blank" rel="noreferrer">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+            <a className="btn btn-primary" href={appointmentWhatsappUrl()} target="_blank" rel="noreferrer">Agendar uma conversa <span aria-hidden="true">↗</span></a>
             <Link className="btn btn-outline hero-treatments-button" href="#tratamentos">Conhecer atendimentos</Link>
           </div>
         </div>
@@ -67,10 +73,11 @@ export default async function Home() {
       <div className="container about-grid about-copy-only about-with-photo">
         <div className="about-copy">
           <span className="eyebrow">Um pouco sobre mim</span>
-          <h2>Prazer, sou a Bruna!</h2>
+          <h2>Prazer, Bruna</h2>
           <h3 className="about-subtitle">Cirurgiã-dentista</h3>
+          <p className="about-intro">Mais do que cuidar de sorrisos, eu cuido de pessoas.</p>
           <div className="about-story">
-            <p>Mais do que cuidar de sorrisos, eu cuido de pessoas. Quero que cada paciente que sente na minha cadeira se sinta à vontade para falar, dividir suas inseguranças e ser ouvido de verdade. Porque, antes de qualquer procedimento, existe uma história, um sentimento e um motivo por trás de cada sorriso.</p>
+            <p>Quero que cada paciente que sente na minha cadeira se sinta à vontade para falar, dividir suas inseguranças e ser ouvido de verdade. Porque, antes de qualquer procedimento, existe uma história, um sentimento e um motivo por trás de cada sorriso.</p>
             <p>Meu propósito é que você se sinta acolhido, compreendido e seguro em cada etapa. Que suas vontades sejam respeitadas, suas dúvidas tenham espaço e que você se sinta parte de todo o processo.</p>
             <p>Quero que você saia daqui com a confiança renovada e a liberdade de sorrir sem esconder os dentes. Porque, no fim, meu propósito vai muito além da odontologia: transformar sorrisos e ajudar pessoas a se enxergarem de um jeito novo.</p>
           </div>
