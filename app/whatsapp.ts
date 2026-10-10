@@ -1,7 +1,7 @@
 const whatsappNumber = "5511948437467";
 const defaultWhatsappMessage = "Olá! Dra. Bruna Andrade, Vim pelo site e gostaria de saber mais sobre os atendimentos.";
-const appointmentMessage = "Olá! Dra. Bruna Andrade, Vim pelo site e gostaria de agendar um atendimento.";
-const conversationMessage = "Olá, doutora Bruna! Gostaria de conversar um pouco sobre os procedimentos e agendamento de consulta com você.";
+const appointmentMessage = "Olá! Gostaria de agendar uma consulta com a Dra. Bruna. Poderia me informar os horários disponíveis?";
+const conversationMessage = "Olá, doutora Bruna! Gostaria de conversar sobre os tratamentos e o agendamento de consulta.";
 
 export function whatsappUrl(message = defaultWhatsappMessage) {
   return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
