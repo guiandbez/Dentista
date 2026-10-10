@@ -62,7 +62,7 @@ export default async function Home() {
           <h1>Devolvo a liberdade de sorrir <em>sem esconder os dentes</em></h1>
           <p className="hero-subtitle">Um cuidado próximo, pensado para que você se sinta acolhido, confiante e à vontade para sorrir.</p>
           <div className="hero-actions">
-            <a className="btn btn-primary" href={appointmentWhatsappUrl()} target="_blank" rel="noreferrer">Agendar uma conversa <span aria-hidden="true">↗</span></a>
+            <a className="btn btn-primary" href={appointmentWhatsappUrl()} target="_blank" rel="noreferrer">Agendar uma conversa</a>
             <Link className="btn btn-outline hero-treatments-button" href="#tratamentos">Conhecer atendimentos</Link>
           </div>
         </div>
@@ -110,11 +110,11 @@ export default async function Home() {
             <figure className="photo-frame clinic-photo clinic-sign"><img src="/images/clinica/placa-896.webp" alt="Placa do consultório" loading="lazy" /></figure>
           </div>
         </div>
-        <div className="clinic-actions"><a className="btn btn-outline" href={clinicMaps} target="_blank" rel="noopener noreferrer">Ver localização no Maps <span aria-hidden="true">↗</span></a></div>
+        <div className="clinic-actions"><a className="btn btn-outline" href={clinicMaps} target="_blank" rel="noopener noreferrer">Ver localização no Maps</a></div>
       </div>
     </section>
 
-    <section className="contact section" id="contato"><div className="contact-content"><span className="eyebrow">Um convite para cuidar de você</span><h2>Vamos conversar?</h2><p>Estou aqui para ouvir você e ajudar a encontrar o cuidado que faz sentido para o seu sorriso.</p><div className="hero-actions"><a className="btn btn-primary" href={conversationWhatsappUrl()} target="_blank" rel="noreferrer">Fale comigo pelo WhatsApp <span aria-hidden="true">↗</span></a><a className="btn btn-outline" href={instagram} target="_blank" rel="noreferrer">@Dra.bruandrade</a></div></div></section>
+    <section className="contact section" id="contato"><div className="contact-content"><h2>Vamos conversar?</h2><p className="contact-highlight">O próximo passo pode ser só uma boa conversa.</p><p className="contact-copy">Para agendamentos e dúvidas, fale comigo pelo Instagram ou WhatsApp.</p><div className="hero-actions contact-actions"><a className="btn btn-primary" href={conversationWhatsappUrl()} target="_blank" rel="noreferrer">Falar pelo WhatsApp</a><a className="btn btn-outline" href={instagram} target="_blank" rel="noreferrer">Falar pelo Instagram</a></div></div></section>
 
     <footer className="footer"><div className="container footer-main"><div className="footer-brand"><Link href="#inicio">Dra. Bruna Andrade</Link><span>Cirurgiã-dentista</span></div><nav aria-label="Links do rodapé"><Link href="#inicio">Início</Link><Link href="#sobre">Sobre</Link><Link href="#tratamentos">Atendimentos</Link><Link href="#contato">Contato</Link></nav><div className="footer-contact"><a href={whatsappUrl()} target="_blank" rel="noreferrer">WhatsApp<br /><span>+55 11 94843-7467</span></a><a href={instagram} target="_blank" rel="noreferrer">Instagram<br /><span>@Dra.bruandrade</span></a></div></div><div className="container footer-bottom"><span>© 2025 Dra. Bruna Andrade. Todos os direitos reservados.</span></div></footer>
   </main></ScrollReveal>;
