@@ -107,10 +107,9 @@ export default async function Home() {
           <div className="clinic-mosaic">
             <figure className="photo-frame clinic-photo"><img src="/images/clinica/espera-896.webp" alt="Sala de espera do consultório" loading="lazy" /></figure>
             <figure className="photo-frame clinic-photo"><img src="/images/clinica/corredor-1170.webp" alt="Corredor do consultório" loading="lazy" /></figure>
-            <figure className="photo-frame clinic-photo clinic-sign"><img src="/images/clinica/placa-896.webp" alt="Placa do consultório" loading="lazy" /></figure>
           </div>
         </div>
-        <div className="clinic-actions"><a className="btn btn-outline" href={clinicMaps} target="_blank" rel="noopener noreferrer">Ver localização no Maps</a></div>
+        <div className="clinic-actions"><a className="btn btn-outline" href={clinicMaps} target="_blank" rel="noopener noreferrer">Ver localização</a></div>
       </div>
     </section>
 

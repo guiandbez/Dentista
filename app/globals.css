@@ -64,13 +64,11 @@ button,input,select,textarea{font-family:"Montserrat",sans-serif}
 .clinic-showcase .clinic-photo{height:100%;min-height:0;aspect-ratio:auto}
 .clinic-section .clinic-photo img{width:100%;height:100%;object-fit:cover}
 .clinic-section .clinic-feature img{object-position:center 48%}
-.clinic-mosaic{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:clamp(14px,1.8vw,24px);min-width:0;min-height:0}
+.clinic-mosaic{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr));gap:clamp(14px,1.8vw,24px);min-width:0;min-height:0}
 .clinic-mosaic .clinic-photo{aspect-ratio:auto}
 .clinic-mosaic .clinic-photo img{object-position:center 45%}
 .clinic-mosaic .clinic-photo:nth-child(1) img{object-position:center 68%}
 .clinic-mosaic .clinic-photo:nth-child(2) img{object-position:center 48%}
-.clinic-mosaic .clinic-photo:nth-child(3) img{object-position:center 50%}
-.clinic-mosaic .clinic-sign{grid-column:1/-1;width:calc(50% - clamp(7px,.9vw,12px));justify-self:center}
 .clinic-actions{display:flex;justify-content:center;margin-top:clamp(26px,3vw,38px)}
 .treatment-cards{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:24px}
 .treatment-card{display:flex;flex:0 1 calc((100% - 48px)/3);min-width:0;flex-direction:column}
@@ -80,7 +78,7 @@ button,input,select,textarea{font-family:"Montserrat",sans-serif}
 .treatment-card ul{margin-bottom:20px}
 .treatment-actions{margin-top:auto;padding-top:4px}
 @media(max-width:960px){.treatment-card{flex-basis:calc((100% - 24px)/2)}}
-@media(max-width:680px){.clinic-section{padding-block:clamp(80px,14vw,102px)}.clinic-heading{margin-bottom:34px}.clinic-title{font-size:clamp(38px,11vw,48px)}.clinic-copy-line{font-size:clamp(17px,4.8vw,20px);line-height:1.5;max-width:34ch;margin-top:14px}.clinic-gallery{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}.clinic-photo,.clinic-photo:nth-child(2){height:auto;aspect-ratio:1/1}.clinic-photo:first-child{grid-column:auto;aspect-ratio:1/1}.clinic-showcase{grid-template-columns:1fr;height:auto;gap:14px}.clinic-showcase .clinic-feature{aspect-ratio:1.08/1}.clinic-mosaic{gap:12px;grid-auto-rows:1fr}.clinic-mosaic .clinic-photo{aspect-ratio:1/1}.clinic-mosaic .clinic-sign{width:calc(50% - 6px)}.clinic-actions .btn{width:100%}.treatment-card{flex-basis:100%}.treatment-card-image{height:auto;aspect-ratio:1.25/1}}
+@media(max-width:680px){.clinic-section{padding-block:clamp(80px,14vw,102px)}.clinic-heading{margin-bottom:34px}.clinic-title{font-size:clamp(38px,11vw,48px)}.clinic-copy-line{font-size:clamp(17px,4.8vw,20px);line-height:1.5;max-width:34ch;margin-top:14px}.clinic-gallery{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}.clinic-photo,.clinic-photo:nth-child(2){height:auto;aspect-ratio:1/1}.clinic-photo:first-child{grid-column:auto;aspect-ratio:1/1}.clinic-showcase{grid-template-columns:1fr;height:auto;gap:14px}.clinic-showcase .clinic-feature{aspect-ratio:1.08/1}.clinic-mosaic{grid-template-rows:none;gap:12px;grid-auto-rows:auto}.clinic-mosaic .clinic-photo{aspect-ratio:1/1}.clinic-actions .btn{width:100%}.treatment-card{flex-basis:100%}.treatment-card-image{height:auto;aspect-ratio:1.25/1}}
 
 .photo-frame{border:1px solid rgba(var(--sand-rgb),.32)}
 .about-points article>span,.treatment-card li::marker{color:var(--sand)}
