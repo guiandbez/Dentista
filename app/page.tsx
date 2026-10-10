@@ -2,11 +2,9 @@ import Link from "next/link";
 import { createClient } from "../lib/supabase-server";
 import ScrollReveal from "./scroll-reveal";
 
-const whatsapp = "https://wa.me/5511948437467";
-const siteOriginMessage = "Olá! Vim pelo site da Dra. Bruna Andrade e gostaria de saber mais sobre os atendimentos.";
+import { whatsappUrl } from "./whatsapp";
 const instagram = "https://instagram.com/Dra.bruandrade";
 const clinicMaps = "https://www.google.com/maps/dir/?api=1&destination=Consult%C3%B3rio%20Dra.%20Bruna%20Andrade%20-%20Odontologia%20%26%20Est%C3%A9tica%2C%20R.%20Inga%C3%AD%2C%20156%20-%20Vila%20Prudente%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003132-080";
-const wa = (message: string) => `${whatsapp}?text=${encodeURIComponent(`${siteOriginMessage} ${message}`)}`;
 
 const treatments = [
   {
@@ -50,7 +48,7 @@ export default async function Home() {
           <h1>Devolvo a liberdade de sorrir <em>sem esconder os dentes</em></h1>
           <p className="hero-subtitle">Um cuidado próximo, pensado para que você se sinta acolhido, confiante e à vontade para sorrir.</p>
           <div className="hero-actions">
-            <a className="btn btn-primary" href={wa("Olá, Dra. Bruna! Gostaria de conversar e agendar uma avaliação.")} target="_blank" rel="noreferrer">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+            <a className="btn btn-primary" href={whatsappUrl()} target="_blank" rel="noreferrer">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a>
             <Link className="btn btn-outline hero-treatments-button" href="#tratamentos">Conhecer atendimentos</Link>
           </div>
         </div>
@@ -100,8 +98,8 @@ export default async function Home() {
       </div>
     </section>
 
-    <section className="contact section" id="contato"><div className="contact-content"><span className="eyebrow">Um convite para cuidar de você</span><h2>Vamos conversar?</h2><p>Estou aqui para ouvir você e ajudar a encontrar o cuidado que faz sentido para o seu sorriso.</p><div className="hero-actions"><a className="btn btn-primary" href={wa("Olá, Dra. Bruna! Gostaria de conversar.")} target="_blank" rel="noreferrer">Fale comigo pelo WhatsApp <span aria-hidden="true">↗</span></a><a className="btn btn-outline" href={instagram} target="_blank" rel="noreferrer">@Dra.bruandrade</a></div></div></section>
+    <section className="contact section" id="contato"><div className="contact-content"><span className="eyebrow">Um convite para cuidar de você</span><h2>Vamos conversar?</h2><p>Estou aqui para ouvir você e ajudar a encontrar o cuidado que faz sentido para o seu sorriso.</p><div className="hero-actions"><a className="btn btn-primary" href={whatsappUrl()} target="_blank" rel="noreferrer">Fale comigo pelo WhatsApp <span aria-hidden="true">↗</span></a><a className="btn btn-outline" href={instagram} target="_blank" rel="noreferrer">@Dra.bruandrade</a></div></div></section>
 
-    <footer className="footer"><div className="container footer-main"><div className="footer-brand"><Link href="#inicio">Dra. Bruna Andrade</Link><span>Cirurgiã-dentista</span></div><nav aria-label="Links do rodapé"><Link href="#inicio">Início</Link><Link href="#sobre">Sobre</Link><Link href="#tratamentos">Atendimentos</Link><Link href="#contato">Contato</Link></nav><div className="footer-contact"><a href={`${whatsapp}?text=${encodeURIComponent(siteOriginMessage)}`} target="_blank" rel="noreferrer">WhatsApp<br /><span>+55 11 94843-7467</span></a><a href={instagram} target="_blank" rel="noreferrer">Instagram<br /><span>@Dra.bruandrade</span></a></div></div><div className="container footer-bottom"><span>© 2025 Dra. Bruna Andrade. Todos os direitos reservados.</span></div></footer>
+    <footer className="footer"><div className="container footer-main"><div className="footer-brand"><Link href="#inicio">Dra. Bruna Andrade</Link><span>Cirurgiã-dentista</span></div><nav aria-label="Links do rodapé"><Link href="#inicio">Início</Link><Link href="#sobre">Sobre</Link><Link href="#tratamentos">Atendimentos</Link><Link href="#contato">Contato</Link></nav><div className="footer-contact"><a href={whatsappUrl()} target="_blank" rel="noreferrer">WhatsApp<br /><span>+55 11 94843-7467</span></a><a href={instagram} target="_blank" rel="noreferrer">Instagram<br /><span>@Dra.bruandrade</span></a></div></div><div className="container footer-bottom"><span>© 2025 Dra. Bruna Andrade. Todos os direitos reservados.</span></div></footer>
   </main></ScrollReveal>;
 }
