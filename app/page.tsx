@@ -60,7 +60,7 @@ export default async function Home() {
         <div className="hero-content">
           <span className="eyebrow">Odontologia e Estética</span>
           <h1><span className="hero-title-line">Devolvo a liberdade de</span> <span className="hero-title-line"><em>sorrir</em> sem esconder os dentes</span></h1>
-          <p className="hero-subtitle">Um cuidado próximo, pensado para que você se sinta acolhido, confiante e à vontade para sorrir.</p>
+          <p className="hero-subtitle">Uma odontologia que começa pela escuta e se transforma em cuidado.</p>
           <div className="hero-actions">
             <a className="btn btn-primary" href={appointmentWhatsappUrl()} target="_blank" rel="noreferrer">Agendar uma conversa</a>
             <Link className="btn btn-outline hero-treatments-button" href="#tratamentos">Conhecer atendimentos</Link>
