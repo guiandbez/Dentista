@@ -76,7 +76,7 @@ export default async function Home() {
         <div className="center-heading"><span className="eyebrow">Atendimentos</span><h2>Cuidados pensados para valorizar<br />a beleza e a saúde do seu sorriso.</h2></div>
         <div className="treatment-cards">{treatments.map((item) => <article className="treatment-card" key={item.name}>
           <div className={`treatment-card-image ${item.name === "Clareamento Dental" ? "treatment-whitening-image" : ""}`}><img src={item.image} alt={item.name} loading="lazy" /></div>
-          <div className="treatment-card-content">{item.title && <h2 className="treatment-feature-title">{item.title}</h2>}<h3>{item.name}</h3>{item.description && <p className="treatment-lead">{item.description}</p>}<h4>Como pode ajudar:</h4><ul>{item.benefits.map(b => <li key={b}>{b}</li>)}</ul><div className="treatment-actions"><a className="btn btn-outline" href={wa(`Olá, Dra. Bruna! Quero saber mais sobre ${item.name}.`)} target="_blank" rel="noreferrer">Quero saber mais</a></div></div>
+          <div className="treatment-card-content">{item.title && <h2 className="treatment-feature-title">{item.title}</h2>}<h3>{item.name}</h3>{item.description && <p className="treatment-lead">{item.description}</p>}<h4>Como pode ajudar:</h4><ul>{item.benefits.map(b => <li key={b}>{b}</li>)}</ul><div className="treatment-actions"><a className="btn btn-outline" href="#contato">Quero saber mais</a></div></div>
         </article>)}</div>
       </div>
     </section>
