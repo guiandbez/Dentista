@@ -59,7 +59,7 @@ export default async function Home() {
       <div className="container hero-grid">
         <div className="hero-content">
           <span className="eyebrow">Odontologia e Estética</span>
-          <h1>Devolvo a liberdade de sorrir <em>sem esconder os dentes</em></h1>
+          <h1><span className="hero-title-line">Devolvo a liberdade de</span> <span className="hero-title-line"><em>sorrir</em> sem esconder os dentes</span></h1>
           <p className="hero-subtitle">Um cuidado próximo, pensado para que você se sinta acolhido, confiante e à vontade para sorrir.</p>
           <div className="hero-actions">
             <a className="btn btn-primary" href={appointmentWhatsappUrl()} target="_blank" rel="noreferrer">Agendar uma conversa</a>

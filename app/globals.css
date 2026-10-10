@@ -116,7 +116,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .hero-background{object-position:center 12%}
 .hero .eyebrow{font-size:10px}
 .hero h1{font-size:clamp(36px,4.7vw,62px);line-height:1.1}
-.about-copy-only .about-copy h2{font-size:clamp(20px,2.1vw,27px);line-height:1.25;margin:0 0 8px}
-.about-copy-only .about-copy > .about-intro{font-size:clamp(38px,5vw,64px);line-height:1.12;margin-top:20px}
+.about-copy-only .about-copy h2{font-size:clamp(16px,1.5vw,20px);line-height:1.25;margin:0 0 8px}
+.about-copy-only .about-copy > .about-intro{font-size:clamp(42px,5.8vw,72px);line-height:1.08;margin-top:20px}
 @media(max-width:960px){.hero h1{font-size:clamp(34px,5.1vw,52px)}}
-@media(max-width:680px){.hero-shade{background:linear-gradient(180deg,rgba(255,255,255,.22) 0%,rgba(255,255,255,.08) 26%,rgba(255,255,255,0) 48%,rgba(18,19,18,.28) 73%,rgba(18,19,18,.62) 100%),linear-gradient(90deg,rgba(18,19,18,.40) 0%,rgba(18,19,18,.20) 58%,rgba(18,19,18,.06) 100%)}.hero-content{padding:clamp(88px,18vw,122px) 0 48px}.hero .eyebrow{font-size:9px}.hero h1{max-width:100%;font-size:clamp(27px,6.8vw,35px);line-height:1.1}.about-copy-only .about-copy h2{font-size:16px}.about-copy-only .about-copy > .about-intro{font-size:clamp(30px,8vw,38px);line-height:1.2;margin-top:18px}}
+@media(max-width:680px){.hero-shade{background:linear-gradient(180deg,rgba(255,255,255,.22) 0%,rgba(255,255,255,.08) 26%,rgba(255,255,255,0) 48%,rgba(18,19,18,.28) 73%,rgba(18,19,18,.62) 100%),linear-gradient(90deg,rgba(18,19,18,.40) 0%,rgba(18,19,18,.20) 58%,rgba(18,19,18,.06) 100%)}.hero-content{padding:clamp(88px,18vw,122px) 0 48px}.hero .eyebrow{font-size:9px}.hero h1{max-width:100%;font-size:clamp(27px,6.8vw,35px);line-height:1.1}.about-copy-only .about-copy h2{font-size:15px}.about-copy-only .about-copy > .about-intro{font-size:clamp(34px,9vw,42px);line-height:1.12;margin-top:18px}}
+
+/* Balance the hero headline naturally across available widths. */
+.hero h1{text-wrap:balance}
+.hero h1 em{display:inline}
+.hero-content{max-width:860px}
+.hero h1{max-width:860px;font-size:clamp(40px,4.4vw,58px)}
+.hero-title-line{display:block}
+@media(max-width:680px){.hero-title-line{display:inline}.hero h1{max-width:100%;font-size:clamp(27px,7vw,34px);text-wrap:balance}}
