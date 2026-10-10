@@ -17,26 +17,26 @@ type Treatment = {
 const treatments: Treatment[] = [
   {
     name: "Facetas / Lentes",
-    image: "/images/tratamentos/facetas-lentes.webp",
+    image: "/images/tratamentos/facetas-lente.jpeg",
     description: "Um sorriso escolhido por você.",
     benefits: ["Corrigir formatos dentários que incomodam.", "Disfarçar espaços entre os dentes.", "Harmonizar tamanho e proporção dos dentes.", "Melhorar a aparência de manchas e alterações de cor."],
   },
   {
     name: "Harmonização facial",
-    image: "/images/tratamentos/harmonizacao-facial.webp",
+    image: "/images/tratamentos/harmonizacao-facial.jpeg",
     description: "Realçar sua beleza sem perder aquilo que faz você ser você.",
     benefits: ["Suavizar linhas de expressão que incomodam.", "Amenizar o aspecto de cansaço na face.", "Valorizar os contornos e traços naturais.", "Melhorar a harmonia facial respeitando sua individualidade."],
     procedures: ["Toxina botulínica", "Preenchimento labial", "Preenchimento de mento (queixo)", "Preenchimento de bigode chinês"],
   },
   {
     name: "Clareamento dental",
-    image: "/images/tratamentos/clareamento-dental.webp",
+    image: "/images/tratamentos/clareamento-dental.jpeg",
     description: "Um sorriso mais claro para você sorrir com mais confiança.",
     benefits: ["Reduzir o aspecto amarelado dos dentes.", "Clarear manchas que comprometem a aparência do sorriso.", "Recuperar a luminosidade dos dentes.", "Sentir mais segurança ao sorrir em fotos."],
   },
   {
     name: "Implantes / Reabilitação",
-    image: "/images/tratamentos/implantes.webp",
+    image: "/images/tratamentos/implantes.jpeg",
     description: "Recupere a segurança para sorrir, mastigar e viver sem se preocupar com a falta de um ou mais dentes.",
     benefits: ["Substituir dentes perdidos.", "Recuperar a segurança ao mastigar.", "Melhorar a estética e a harmonia do sorriso.", "Recuperar a confiança para sorrir sem esconder os dentes."],
   },
@@ -54,7 +54,7 @@ export default async function Home() {
   await getProcedures();
   return <ScrollReveal><main>
     <section className="hero" id="inicio">
-      <img className="hero-background" src="/images/dra-bruna/bruna-transparente-2160.webp" alt="" fetchPriority="high" />
+      <img className="hero-background" src="/images/dra-bruna/bruna-transparente-2160.jpeg" alt="" fetchPriority="high" />
       <div className="hero-shade" />
       <div className="container hero-grid">
         <div className="hero-content">
@@ -82,7 +82,7 @@ export default async function Home() {
             <p>Quero que você saia daqui com a confiança renovada e a liberdade de sorrir sem esconder os dentes. Porque, no fim, meu propósito vai muito além da odontologia: transformar sorrisos e ajudar pessoas a se enxergarem de um jeito novo.</p>
           </div>
         </div>
-        <figure className="photo-frame about-photo"><img src="/images/dra-bruna/sobre-mim-TROCAR.webp" alt="Imagem provisória da recepção; substituir por foto da Dra. Bruna" loading="lazy" /></figure>
+        <figure className="photo-frame about-photo"><img src="/images/dra-bruna/sobre-mim-TROCAR.jpeg" alt="Imagem provisória da recepção; substituir por foto da Dra. Bruna" loading="lazy" /></figure>
       </div>
     </section>
 
