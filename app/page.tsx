@@ -72,7 +72,6 @@ export default async function Home() {
     <section className="about section" id="sobre">
       <div className="container about-grid about-copy-only about-with-photo">
         <div className="about-copy">
-          <span className="eyebrow">Um pouco sobre mim</span>
           <h2>Prazer, Bruna</h2>
           <h3 className="about-subtitle">Cirurgiã-dentista</h3>
           <p className="about-intro">Mais do que cuidar de sorrisos, eu cuido de pessoas.</p>
