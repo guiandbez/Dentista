@@ -45,7 +45,7 @@ export default async function Home() {
       <div className="hero-shade" />
       <div className="container hero-grid">
         <div className="hero-content">
-          <span className="eyebrow">Cirurgiã-dentista</span>
+          <span className="eyebrow">Odontologia e Estética</span>
           <h1>Devolvo a liberdade de sorrir <em>sem esconder os dentes</em></h1>
           <p className="hero-subtitle">Um cuidado próximo, pensado para que você se sinta acolhido, confiante e à vontade para sorrir.</p>
           <div className="hero-actions">
