@@ -6,25 +6,33 @@ import { appointmentWhatsappUrl, conversationWhatsappUrl, whatsappUrl } from "./
 const instagram = "https://instagram.com/Dra.bruandrade";
 const clinicMaps = "https://www.google.com/maps/dir/?api=1&destination=Consult%C3%B3rio%20Dra.%20Bruna%20Andrade%20-%20Odontologia%20%26%20Est%C3%A9tica%2C%20R.%20Inga%C3%AD%2C%20156%20-%20Vila%20Prudente%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003132-080";
 
-const treatments = [
+type Treatment = {
+  name: string;
+  image: string;
+  description: string;
+  benefits: string[];
+  procedures?: string[];
+};
+
+const treatments: Treatment[] = [
   {
-    name: "Clareamento Dental",
-    title: "Devolvendo o brilho para o seu sorriso.",
-    image: "/images/tratamentos/ref-clareamento-1200.webp",
-    description: "",
-    benefits: ["Clarear o branco dos dentes", "Reduzir manchas e pigmentações", "Deixar o sorriso mais claro", "Realçar a beleza de forma natural"],
+    name: "Facetas / Lentes",
+    image: "/images/tratamentos/facetas-lentes.webp",
+    description: "Um sorriso escolhido por você.",
+    benefits: ["Corrigir formatos dentários que incomodam.", "Disfarçar espaços entre os dentes.", "Harmonizar tamanho e proporção dos dentes.", "Melhorar a aparência de manchas e alterações de cor."],
   },
   {
-    name: "Harmonização Facial",
-    image: "/images/tratamentos/caso-labial-1169.webp",
-    description: "Procedimentos personalizados que ajudam a equilibrar e valorizar os contornos do rosto, respeitando as características naturais de cada pessoa.",
-    benefits: ["Valorizar os contornos faciais", "Promover mais equilíbrio e harmonia", "Realçar características naturais", "Planejamento personalizado para cada rosto"],
+    name: "Harmonização facial",
+    image: "/images/tratamentos/harmonizacao-facial.webp",
+    description: "Realçar sua beleza sem perder aquilo que faz você ser você.",
+    benefits: ["Suavizar linhas de expressão que incomodam.", "Amenizar o aspecto de cansaço na face.", "Valorizar os contornos e traços naturais.", "Melhorar a harmonia facial respeitando sua individualidade."],
+    procedures: ["Toxina botulínica", "Preenchimento labial", "Preenchimento de mento (queixo)", "Preenchimento de bigode chinês"],
   },
   {
-    name: "Implantes Dentários",
-    image: "/images/tratamentos/caso-lentes-1170.webp",
-    description: "Repõe dentes perdidos com segurança, funcionalidade e estética.",
-    benefits: ["Restaurar a função mastigatória", "Preservar o osso da região", "Devolver a confiança ao sorrir", "Melhorar a qualidade de vida"],
+    name: "Clareamento dental",
+    image: "/images/tratamentos/clareamento-dental.webp",
+    description: "Um sorriso mais claro para você sorrir com mais confiança.",
+    benefits: ["Reduzir o aspecto amarelado dos dentes.", "Clarear manchas que comprometem a aparência do sorriso.", "Recuperar a luminosidade dos dentes.", "Sentir mais segurança ao sorrir em fotos."],
   },
 ];
 
@@ -56,7 +64,7 @@ export default async function Home() {
     </section>
 
     <section className="about section" id="sobre">
-      <div className="container about-grid about-copy-only">
+      <div className="container about-grid about-copy-only about-with-photo">
         <div className="about-copy">
           <span className="eyebrow">Um pouco sobre mim</span>
           <h2>Prazer, sou a Bruna!</h2>
@@ -67,6 +75,7 @@ export default async function Home() {
             <p>Quero que você saia daqui com a confiança renovada e a liberdade de sorrir sem esconder os dentes. Porque, no fim, meu propósito vai muito além da odontologia: transformar sorrisos e ajudar pessoas a se enxergarem de um jeito novo.</p>
           </div>
         </div>
+        <figure className="photo-frame about-photo"><img src="/images/dra-bruna/sobre-mim-TROCAR.webp" alt="Imagem provisória da recepção; substituir por foto da Dra. Bruna" loading="lazy" /></figure>
       </div>
     </section>
 
@@ -74,8 +83,8 @@ export default async function Home() {
       <div className="container">
         <div className="center-heading"><span className="eyebrow">Atendimentos</span><h2>Cuidados pensados para valorizar<br />a beleza e a saúde do seu sorriso.</h2></div>
         <div className="treatment-cards">{treatments.map((item) => <article className="treatment-card" key={item.name}>
-          <div className={`treatment-card-image ${item.name === "Clareamento Dental" ? "treatment-whitening-image" : ""}`}><img src={item.image} alt={item.name} loading="lazy" /></div>
-          <div className="treatment-card-content">{item.title && <h2 className="treatment-feature-title">{item.title}</h2>}<h3>{item.name}</h3>{item.description && <p className="treatment-lead">{item.description}</p>}<h4>Como pode ajudar:</h4><ul>{item.benefits.map(b => <li key={b}>{b}</li>)}</ul><div className="treatment-actions"><a className="btn btn-outline" href="#contato">Quero saber mais</a></div></div>
+          <div className="treatment-card-image"><img src={item.image} alt={item.name} loading="lazy" /></div>
+          <div className="treatment-card-content"><h3>{item.name}</h3><p className="treatment-lead">{item.description}</p><h4>Como pode ajudar:</h4><ul>{item.benefits.map(b => <li key={b}>{b}</li>)}</ul>{item.procedures && <><h4>Procedimentos disponíveis:</h4><ul className="treatment-procedures">{item.procedures.map(procedure => <li key={procedure}>{procedure}</li>)}</ul></>}<div className="treatment-actions"><a className="btn btn-outline" href="#contato">Quero saber mais</a></div></div>
         </article>)}</div>
       </div>
     </section>
