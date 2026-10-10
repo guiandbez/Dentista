@@ -1,6 +1,6 @@
 @font-face{font-family:"Montserrat";src:url("/fonts/montserrat-latin.woff2") format("woff2");font-style:normal;font-weight:400 700;font-display:swap}
 
-:root{--rose:#B88787;--rose-rgb:184,135,135;--rose-dark:#4A302C;--blush:#E5D5D0;--blush-soft:#E8D7D0;--blush-2:#B59A72;--cream:#F7F6F3;--cream-rgb:247,246,243;--cream-soft:#F8F4F1;--sand:#B59A72;--sand-rgb:181,154,114;--ink:#4A302C;--ink-rgb:74,48,44;--muted:#4A302C;--line:#B59A72;--white:#F7F6F3;--soft:#E5D5D0;--danger:#B88787;--ok:#5B6250;--interactive:#5B6250;--interactive-rgb:91,98,80;--primary-button:var(--interactive);--primary-button-hover:var(--ink);--button-outline-border:var(--blush-2);--card-border:var(--blush);--point-surface:rgba(var(--cream-rgb),.6);--clinic-border:rgba(var(--sand-rgb),.48);--mobile-control-surface:var(--blush);--whatsapp-background:var(--rose);--radius:28px;--radius-sm:18px;--shadow:0 14px 38px rgba(var(--ink-rgb),.08)}
+:root{--rose:#626262;--rose-rgb:98,98,98;--rose-dark:#1D1D1D;--blush:#E9E9E9;--blush-soft:#F1F1F1;--blush-2:#A6A6A6;--cream:#FFFFFF;--cream-rgb:255,255,255;--cream-soft:#F7F7F7;--sand:#737373;--sand-rgb:115,115,115;--ink:#1D1D1D;--ink-rgb:29,29,29;--muted:#4B4B4B;--line:#B0B0B0;--white:#FFFFFF;--soft:#E9E9E9;--danger:#3A3A3A;--ok:#333333;--interactive:#292929;--interactive-rgb:41,41,41;--primary-button:#292929;--primary-button-hover:#111111;--button-outline-border:#9C9C9C;--card-border:#D0D0D0;--point-surface:rgba(0,0,0,.035);--clinic-border:rgba(0,0,0,.22);--mobile-control-surface:#E9E9E9;--whatsapp-background:#292929;--radius:28px;--radius-sm:18px;--shadow:0 14px 38px rgba(0,0,0,.08)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:96px}
 body{margin:0;background:var(--cream);color:var(--ink);font-family:"Montserrat",sans-serif;font-weight:400}
@@ -105,7 +105,7 @@ html[data-theme="rose"] .brand{color:var(--rose-dark)}
 html[data-theme="rose"] .brand-icon{color:var(--rose)}
 html[data-theme="rose"] .footer{background:#584447;color:#FFFFFF}
 html[data-theme="rose"] .footer-main nav a:hover,html[data-theme="rose"] .footer-contact a:hover span{color:#F2C6BF}
-html[data-theme="mono"]{--rose:#626262;--rose-rgb:98,98,98;--rose-dark:#1D1D1D;--blush:#E9E9E9;--blush-soft:#F1F1F1;--blush-2:#A6A6A6;--cream:#FFFFFF;--cream-rgb:255,255,255;--cream-soft:#F7F7F7;--sand:#737373;--sand-rgb:115,115,115;--ink:#1D1D1D;--ink-rgb:29,29,29;--muted:#4B4B4B;--line:#B0B0B0;--white:#FFFFFF;--soft:#E9E9E9;--danger:#3A3A3A;--ok:#333333;--interactive:#292929;--interactive-rgb:41,41,41;--primary-button:#292929;--primary-button-hover:#111111;--button-outline-border:#9C9C9C;--card-border:#D0D0D0;--point-surface:rgba(0,0,0,.035);--clinic-border:rgba(0,0,0,.22);--mobile-control-surface:#E9E9E9;--whatsapp-background:#292929;--shadow:0 14px 38px rgba(0,0,0,.08)}
+html[data-theme="mono"]{--rose:#70815F;--rose-rgb:112,129,95;--rose-dark:#344332;--blush:#E5E5D8;--blush-soft:#F0EFE4;--blush-2:#C5A96A;--cream:#F8F7F0;--cream-rgb:248,247,240;--cream-soft:#F3F1E7;--sand:#C5A96A;--sand-rgb:197,169,106;--ink:#344332;--ink-rgb:52,67,50;--muted:#555D4C;--line:#D5CCB1;--white:#FFFFFF;--soft:#E5E5D8;--danger:#9A6A5C;--ok:#536B4D;--interactive:#536B4D;--interactive-rgb:83,107,77;--primary-button:#536B4D;--primary-button-hover:#344332;--button-outline-border:#C5A96A;--card-border:#E0D8C1;--point-surface:rgba(255,255,255,.6);--clinic-border:rgba(var(--sand-rgb),.48);--mobile-control-surface:#E5E5D8;--whatsapp-background:#536B4D;--shadow:0 14px 38px rgba(52,67,50,.08)}
 html.theme-transition,html.theme-transition *{transition-property:color,background-color,border-color,box-shadow,outline-color,fill,stroke;transition-duration:.3s;transition-timing-function:ease!important}
 .theme-switcher{position:relative;flex:none;z-index:25}
 .theme-switcher-trigger{width:38px;height:38px;padding:0;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:rgba(var(--cream-rgb),.7);color:var(--ink);cursor:pointer;transition:background-color .2s,border-color .2s,color .2s}
@@ -114,14 +114,15 @@ html.theme-transition,html.theme-transition *{transition-property:color,backgrou
 .theme-option{width:100%;min-height:38px;padding:8px 9px;display:flex;align-items:center;gap:9px;border:0;border-radius:10px;background:transparent;color:var(--ink);font:500 11px "Montserrat",sans-serif;text-align:left;cursor:pointer}
 .theme-option:hover,.theme-option[aria-pressed="true"]{background:var(--soft)}
 .theme-swatch{width:13px;height:13px;flex:none;border:1px solid var(--line);border-radius:50%}
-.theme-swatch-main{background:linear-gradient(135deg,#F7F6F3 50%,#5B6250 50%)}
+.theme-swatch-main{background:linear-gradient(135deg,#FFFFFF 50%,#292929 50%)}
 .theme-swatch-rose{background:linear-gradient(135deg,#FBF7F2 50%,#A96576 50%)}
-.theme-swatch-mono{background:linear-gradient(90deg,#222 0 33%,#999 33% 66%,#fff 66% 100%)}
+.theme-swatch-mono{background:linear-gradient(135deg,#F8F7F0 50%,#536B4D 50%)}
 .theme-option-check{margin-left:auto;color:var(--interactive);font-size:13px}
 @media(prefers-reduced-motion:reduce){html.theme-transition,html.theme-transition *{transition-duration:0s!important}}
 @media(max-width:680px){.theme-switcher{margin-left:auto}.mobile-menu{margin-left:10px}}
 html:not([data-theme]) .hero-treatments-button{background:transparent;border:2px solid var(--interactive);padding:14px 22px;color:var(--interactive)}
 html:not([data-theme]) .hero-treatments-button:hover{background:var(--interactive);border-color:var(--interactive);color:var(--cream)}
+html:not([data-theme]) .hero .eyebrow,html:not([data-theme]) .hero h1 em{color:#fff}
 html[data-theme="rose"] .hero-treatments-button{background:transparent;border:2px solid var(--rose);padding:14px 22px;color:var(--rose)}
 html[data-theme="rose"] .hero-treatments-button:hover{background:var(--rose);border-color:var(--rose);color:var(--cream)}
 html[data-theme="mono"] .hero-treatments-button{background:transparent;border:2px solid var(--interactive);padding:14px 22px;color:var(--interactive)}

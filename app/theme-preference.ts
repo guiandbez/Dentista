@@ -1,9 +1,9 @@
 export const THEME_STORAGE_KEY = "dentista-theme";
 
 export const themeOptions = [
-  { id: "main", label: "Principal" },
+  { id: "main", label: "Preto e branco" },
   { id: "rose", label: "Rosa" },
-  { id: "mono", label: "Preto e branco" },
+  { id: "mono", label: "Verde e dourado" },
 ] as const;
 
 export type Theme = (typeof themeOptions)[number]["id"];
