@@ -87,7 +87,7 @@ export default async function Home() {
 
     <section className="treatments section section-soft" id="tratamentos">
       <div className="container">
-        <div className="center-heading"><span className="eyebrow">Atendimentos</span><h2>Cuidados pensados para valorizar<br />a beleza e a saúde do seu sorriso.</h2></div>
+        <div className="center-heading"><span className="eyebrow">Atendimentos</span><h2 className="treatments-heading">É aqui que o cuidado se transforma em possibilidades</h2></div>
         <div className="treatment-cards">{treatments.map((item) => <article className="treatment-card" key={item.name}>
           <div className="treatment-card-image"><img src={item.image} alt={item.name} loading="lazy" /></div>
           <div className="treatment-card-content"><h3>{item.name}</h3><p className="treatment-lead">{item.description}</p><h4>Como pode ajudar:</h4><ul>{item.benefits.map(b => <li key={b}>{b}</li>)}</ul>{item.procedures && <><h4>Procedimentos disponíveis:</h4><ul className="treatment-procedures">{item.procedures.map(procedure => <li key={procedure}>{procedure}</li>)}</ul></>}<div className="treatment-actions"><a className="btn btn-outline" href="#contato">Quero saber mais</a></div></div>
